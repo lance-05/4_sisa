@@ -22,6 +22,7 @@ body {
     color: #333;
     align-self: flex-start; /* Aligning the text to the left */
     margin-bottom: 20px; /* Space between the title and button */
+    font-family: 'Georgia', serif;
 }
 
 .start-button {
@@ -29,8 +30,8 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.7px);
-    padding: 15px 30px;
-    font-size: 1.5em;
+    padding: 5px 30px;
+    font-size: 1.2em;
     text-decoration: none;
     color: #000;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -68,7 +69,7 @@ body {
     background: rgba(255, 255, 255, 0.04);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px 30px;
+    padding: 5px 30px;
     font-size: 1.5em;
     text-decoration: none;
     color: #333;
@@ -82,18 +83,40 @@ body {
     transform: scale(1.05);
 }
 
+.note-page {
+    background: linear-gradient(to bottom right, #e0c3fc, #f9f9f9); /* Pastel purple to white gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.message-page {
+    background: linear-gradient(to bottom right, #e0c3fc, #ffffff); /* Light pink to white gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .message-container {
-    background: rgba(255, 255, 255, 0.04); /* Same as start button */
-    border: 1px solid black; /* Changed border color to black */
+    background: rgba(255, 255, 255, 0.04); /* Same as specified */
+    border-radius: 16px; /* Updated border-radius */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
-    border-radius: 10px;
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
-    height: 100vh; /* Full page height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centering content vertically */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+
+.message-text, .note-text {
+    font-size: 1.5em; /* Base font size */
+    color: #333; /* Text color */
 }
 
 .back-button {
@@ -104,18 +127,19 @@ body {
     border: none;
     text-decoration: none;
     color: #333;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    transition: background 0.3s, transform 0.3s;
-}
+    border-radius:20px;
+   
 
 .back-button:hover {
     background: rgba(255, 255, 255, 0.5);
     transform: scale(1.05);
 }
-
-/* Responsive Styles */
+    
 @media (max-width: 768px) {
+    .message-text, .note-text {
+        font-size: 2em; /* Increase font size for tablet and larger screens */
+    }
+ 
     .container h1 {
         font-size: 2em; /* Adjusted for smaller screens */
     }
@@ -139,6 +163,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    .message-text, .note-text {
+        font-size: 2.5em; /* Further increase font size for desktop screens */
+    }
+
     .container h1 {
         font-size: 1.8em; /* Further adjustment for very small screens */
     }
