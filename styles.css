@@ -9,19 +9,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Changed to column for vertical alignment */
+    flex-direction: column; 
     text-align: center;
 }
 
 .container {
-    text-align: center; /* Centering the container */
+    text-align: center;
 }
 
 .container h1 {
-    font-size: 2.5em; /* Adjusted font size */
+    font-size: 2.5em; 
     color: #333;
-    align-self: flex-start; /* Aligning the text to the left */
-    margin-bottom: 20px; /* Space between the title and button */
+    align-self: flex-start;
+    margin-bottom: 20px; 
     font-family: 'Georgia', serif;
 }
 
@@ -54,9 +54,9 @@ body {
 }
 
 .monthsary-title {
-    font-size: 3em; /* Increased font size */
-    color: #d5006d; /* Darker pink */
-    font-family: 'Georgia', serif; /* Changed font style */
+    font-size: 3em; 
+    color: #d5006d; 
+    font-family: 'Georgia', serif; 
 }
 
 .button-container {
@@ -84,7 +84,7 @@ body {
 }
 
 .note-page {
-    background: linear-gradient(to bottom right, #e0c3fc, #f9f9f9); /* Pastel purple to white gradient */
+    background: linear-gradient(to bottom right, #e0c3fc, #f9f9f9); 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@ body {
     text-align: center;
 }
 .message-page {
-    background: linear-gradient(to bottom right, #e0c3fc, #ffffff); /* Light pink to white gradient */
+    background: linear-gradient(to bottom right, #e0c3fc, #ffffff); 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -100,8 +100,8 @@ body {
     text-align: center;
 }
 .message-container {
-    background: rgba(255, 255, 255, 0.04); /* Same as specified */
-    border-radius: 16px; /* Updated border-radius */
+    background: rgba(255, 255, 255, 0.04); 
+    border-radius: 16px; 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.7px);
     -webkit-backdrop-filter: blur(1.7px);
@@ -110,13 +110,13 @@ body {
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
-    height: auto; /* Allow height to adjust based on content */
+    height: auto; 
 }
 
 
 .message-text, .note-text {
-    font-size: 1.5em; /* Base font size */
-    color: #333; /* Text color */
+    font-size: 1.5em; 
+    color: #333;
 }
 
 .back-button {
@@ -141,16 +141,16 @@ body {
     }
  
     .container h1 {
-        font-size: 2em; /* Adjusted for smaller screens */
+        font-size: 2em; 
     }
 
     .start-button, .action-button {
         padding: 10px 20px;
-        font-size: 1.2em; /* Adjusted for smaller screens */
+        font-size: 1.2em; 
     }
 
     .monthsary-title {
-        font-size: 2.5em; /* Adjusted for smaller screens */
+        font-size: 2.5em; 
     }
 
     .message-container {
@@ -164,20 +164,19 @@ body {
 
 @media (max-width: 480px) {
     .message-text, .note-text {
-        font-size: 2.5em; /* Further increase font size for desktop screens */
-    }
+        font-size: 2.5em; 
 
     .container h1 {
-        font-size: 1.8em; /* Further adjustment for very small screens */
+        font-size: 1.8em;
     }
 
     .start-button, .action-button {
         padding: 8px 15px;
-        font-size: 1em; /* Further adjustment for very small screens */
+        font-size: 1em;
     }
 
     .monthsary-title {
-        font-size: 2em; /* Further adjustment for very small screens */
+        font-size: 2em; 
     }
 
     .message-container {
